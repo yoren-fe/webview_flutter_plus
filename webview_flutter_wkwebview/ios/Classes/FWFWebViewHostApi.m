@@ -133,6 +133,10 @@
                                  details:[NSString stringWithFormat:@"URL was: '%@'", request.url]];
     return;
   }
+
+  WKWebViewConfiguration *configuration = [[self webViewForIdentifier:identifier] configuration];
+  [[configuration preferences] setValue:@(true) forKey:@"allowFileAccessFromFileURLs"];
+
   [[self webViewForIdentifier:identifier] loadRequest:urlRequest];
 }
 
@@ -230,6 +234,9 @@
                                    error:(FlutterError *_Nullable __autoreleasing *_Nonnull)error {
   NSURL *fileURL = [NSURL fileURLWithPath:url isDirectory:NO];
   NSURL *readAccessNSURL = [NSURL fileURLWithPath:readAccessUrl isDirectory:YES];
+
+  WKWebViewConfiguration *configuration = [[self webViewForIdentifier:identifier] configuration];
+  [[configuration preferences] setValue:@(true) forKey:@"allowFileAccessFromFileURLs"];
 
   if (!fileURL) {
     *error = [FWFWebViewHostApiImpl errorForURLString:url];
