@@ -22,17 +22,17 @@ dependencies:
   webview_flutter_android:
     git:
       url: https://github.com/yoren-fe/webview_flutter_plus.git
-      ref: 1.0.2
+      ref: 1.0.3
       path: webview_flutter_android
   webview_flutter_platform_interface:
     git:
       url: https://github.com/yoren-fe/webview_flutter_plus.git
-      ref: 1.0.2
+      ref: 1.0.3
       path: webview_flutter_platform_interface
   webview_flutter_wkwebview:
     git:
       url: https://github.com/yoren-fe/webview_flutter_plus.git
-      ref: 1.0.2
+      ref: 1.0.3
       path: webview_flutter_wkwebview
 
 dev_dependencies:
