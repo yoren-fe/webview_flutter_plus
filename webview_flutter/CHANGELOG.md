@@ -156,7 +156,7 @@ when hybrid composition is used [flutter/issues/75667](https://github.com/flutte
 * Minor documentation update to indicate known issue on iOS 13.4 and 13.5.
   * See: https://github.com/flutter/flutter/issues/53490
 
-## 1.0.6
+## 1.0.5
 
 * Invoke the WebView.onWebResourceError on iOS when the webview content process crashes.
 
@@ -164,11 +164,11 @@ when hybrid composition is used [flutter/issues/75667](https://github.com/flutte
 
 * Fix example in the readme.
 
-## 1.0.4
+## 1.0.5
 
 * Suppress the `deprecated_member_use` warning in the example app for `ScaffoldMessenger.showSnackBar`.
 
-## 1.0.4
+## 1.0.5
 
 * Update android compileSdkVersion to 29.
 
