@@ -114,7 +114,7 @@ class DisplayListenerProxy {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
       // We cannot use reflection on Android P, but it shouldn't matter as it shipped
       // with WebView 66.0.3359.158 and the WebView version the bug this code is working around was
-      // fixed in 61.0.3116.0.
+      // fixed in 61.0.4116.0.
       return new ArrayList<>();
     }
     try {

@@ -168,7 +168,7 @@ when hybrid composition is used [flutter/issues/75667](https://github.com/flutte
 
 * Suppress the `deprecated_member_use` warning in the example app for `ScaffoldMessenger.showSnackBar`.
 
-## 1.0.3
+## 1.0.4
 
 * Update android compileSdkVersion to 29.
 
